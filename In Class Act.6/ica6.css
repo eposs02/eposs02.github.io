@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #c72626;
+  background-color: #fcf8f8;
 }
 
 article {
@@ -17,8 +17,9 @@ article {
   margin: 20px auto;
   position: relative;
   background-repeat: no-repeat;
-  background-color: 1mm solid white;
+  background-color: white;
   border-top: solid red;
+  background-image: url(top-image.png);
   background-image: url('bottom-image.png');
 }
 
