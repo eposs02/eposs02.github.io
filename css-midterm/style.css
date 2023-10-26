@@ -3,7 +3,7 @@
  body{
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(8, 29, 45);
-    color: rgb(164, 146, 137);
+    color: rgb(194, 180, 173);
     margin: 0;
  }
 
@@ -26,8 +26,8 @@
 
 nav {
     background-color: rgb(164, 146, 137);
+    border: 7px solid rgb(8, 29, 45);
     padding: .5em;
-    position: sticky;
     top: 0;
   }
   
@@ -53,23 +53,21 @@ nav {
 
  #flex-parent{
     display:flex;
-    background-color: rgb(164, 146, 137);;
+    background-color: rgb(164, 146, 137);
     flex-direction: row;
 }
 
 #flex-parent p{
-    padding:5vw;
+    padding: 5vw;
 }
 
-#flex-child1{
-     order: 3; 
+#flex-child1{ 
      padding: 15px;
      color: rgb(8, 29, 45);
      align-content: center;
 }
 
 #flex-child2{
- order:4;
  padding: 15px;
  color: rgb(8, 29, 45);
  align-content: center;
@@ -77,7 +75,7 @@ nav {
 
 #grid-parent{
     display:grid;
-    grid-template-columns: repeat(3,33vw);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
     padding: 20px;
    
@@ -241,34 +239,32 @@ nav {
         color: rgb(8, 29, 45);
     }
 
+    
     nav {
-        background-color: rgb(164, 146, 137);;
-        padding: .5em;
-        position: sticky;
-        top: 0;
-      }
+    background-color: rgb(164, 146, 137);
+    border: 7px solid rgb(8, 29, 45);
+    padding: .5em;
+    top: 0;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-      
-      nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-    
-      }
-    
-      
-      nav a {
-        color: rgb(8, 29, 45);
-        text-decoration: none;
-        font-size: 18px;
-        padding: .5em 1em;
-        display: flex;
-      }
-    
+  }
+  
+  nav a {
+    color: rgb(8, 29, 45);
+    text-decoration: none;
+    padding: .5em 1em;
+    display: flex;
+  }
+
      #flex-parent{
         display:flex;
         background-color: rgb(164, 146, 137);;
@@ -294,11 +290,10 @@ nav {
     }
     
     #grid-parent{
-        display:flex;
-        flex-direction: row;
-        background-color: rg;
-       
+        display: flex;
+        flex-direction: column;
     }
+    
     
     .grid-item1 {
         background-image: url(sheetmusic.png);
