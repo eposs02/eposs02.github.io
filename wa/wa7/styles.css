@@ -50,6 +50,7 @@ body {
     display: flex;
   }
   
+
   .photos {
     list-style: none;
     margin: 0;
@@ -91,15 +92,13 @@ body {
     max-width: 980px;
   }
   
+  
   .grid {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
     display: flex;
-<<<<<<< HEAD
     flex-direction: column;
-=======
->>>>>>> 0332db6eb8aee1df5f786099e850793b7fd12a14
   }
   
   nav {
@@ -114,12 +113,10 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
-<<<<<<< HEAD
     align-items: center;
     flex-direction: column;
-=======
     justify-content: space-evenly;
->>>>>>> 0332db6eb8aee1df5f786099e850793b7fd12a14
+
   }
   
   nav a {
@@ -146,9 +143,4 @@ body {
       margin: 1em;
   }
 }
-<<<<<<< HEAD
-  
-=======
-  }
->>>>>>> 0332db6eb8aee1df5f786099e850793b7fd12a14
 

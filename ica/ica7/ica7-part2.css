@@ -13,7 +13,7 @@ body{
 }
 
 #flex-child1{
-     order: 3;
+     order: 3; 
 }
 #flex-child2{
  order:4;
@@ -21,7 +21,7 @@ body{
 #flex-child3{
     order:2;
 }
-#flex-child4{
+#flex-child4{ 
      order:1;
 }
 
@@ -39,31 +39,4 @@ body{
 }
 #no0{
     grid-column: 2/3;
-}
-#no1{
-
-}
-#no2{
-
-}
-#no3{
-
-}
-#no4{
-
-}
-#no5{
-
-}
-#no6{
-
-}
-#no7{
-
-}
-#no8{
-
-}
-#no9{
-
 }
