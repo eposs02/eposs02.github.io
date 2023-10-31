@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ica10</title>
+    
+    <style>
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid greenyellow;
+            background-color: rgb(189, 186, 188);
+            color: blue;
+            box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.43);
+            border-radius: 10px;
+            cursor: pointer;
+            height: 100px;
+            width: 150px
+        }
+    </style>
+</head>
+<body>
+    
+    <button type="button">Do not click!</button>
+    
+    <h1 id="hover"> Do Not Hover!</h1>
+    <b id="effect"></b>
+
+
+    <script>
+        
+        const button = document.querySelector("button");
+        button.addEventListener('click', updateName);
+
+        const y = document.getElementById("hover");
+        y.addEventListener("mouseover", RespondMouseOver);
+        y.addEventListener("mouseout". RespondMouseOut)
+        y.addEventListener("mousemove", RespondMouseMove);
+
+        function RespondMouseOver() {
+            document.getElementById("effect").innerHTML +=
+                    "I told you not to hover." + "<br>";
+        }
+
+        function RespondMouseOut() {
+            document.getElementById("effect").innerHTML +=
+                    "Never going to end" + "<br>";
+        }
+
+        function RespondMouseMove(){
+            document.getElementById("effect").innerHTML +=
+                    "Never Ever EverEnding" + "<br>";
+            }
+        
+
+        function updateName() {
+        alert = prompt("I told you not to!");
+        button.textContent = `You're not a good listener`;
+        }
+
+
+    </script>
+</body>
+</html>

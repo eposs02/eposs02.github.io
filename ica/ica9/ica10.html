@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ica10</title>
+    
+    <style>
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid greenyellow;
+            background-color: rgb(235, 13, 190);
+            color: blue;
+            box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.43);
+            border-radius: 10px;
+            cursor: pointer;
+            height: 100px;
+            width: 150px
+        }
+    </style>
+</head>
+<body>
+    
+    <button type="button">Player 1: Chris</button>
+    
+    <p id="hello"> This is a Paragraph</p>
+
+
+    <script>
+        
+        const button = document.querySelector("button");
+        const hello = "This is a paragraph";
+
+        button.addEventListener('click', updateName);
+        hello.addEventListener('click', updateName);
+
+        function updateName() {
+        let name = prompt("Say Hello!");
+        button.textContent = `Hello to you too!`;
+        }
+    </script>
+</body>
+</html>
