@@ -8,7 +8,7 @@ function randomValueFromArray(array) {
   return array[random];
 }
 
-let storyText = "It was 94 fahrenheit outside, so :insertX: went for a walk. When he got to :insertY:, they stared in horror for a few moments, then :insertZ:. Bob saw the whole thing, but was not surprised — :insertX: weighs 300 pounds, and it was a hot day.";
+let storyText = "It was 94 fahrenheit outside, so :insertX: went to a special place. When he got to :insertY:, he decided to take a seat when he was stunned at what he saw, his sister :insertZ:! Bob saw the whole thing, and was also very surprised — :insertX:'s sister weighs 300 pounds!";
 
 const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
 const insertY = ["the soup kitchen", "Disneyland", "the White House"];
@@ -26,6 +26,8 @@ newStory = newStory.replace(":insertY:", yItem);
 newStory = newStory.replace(":insertZ:", zItem);
 
 function result() {
+
+  const name = document.getElementById("customname").value;
 
   if(customName.value !== '') {
     const name = customName.value;
