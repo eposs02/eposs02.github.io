@@ -27,8 +27,6 @@ newStory = newStory.replace(":insertZ:", zItem);
 
 function result() {
 
-  const name = document.getElementById("customname").value;
-
   if(customName.value !== '') {
     const name = customName.value;
     newStory.replace("Bob", name);
