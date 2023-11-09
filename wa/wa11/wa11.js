@@ -8,7 +8,7 @@ const overlay = document.querySelector('.overlay');
 const images = ["img/pic1.JPG", 
                 "img/pic2.JPG", 
                 "img/pic3.JPG", 
-                "img/pic4.JPG", 
+                "img/pic4.JPG",  
                 "img/pic5.JPG"]
 
 
