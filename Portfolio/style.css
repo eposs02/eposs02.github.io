@@ -1,0 +1,40 @@
+@media screen and (min-width: 401px) {
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#flex-parent{
+    display:flex;
+    background-color: rgb(164, 146, 137);
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#flex-child1{ 
+     padding: 5px;
+     color: rgb(12, 11, 12);
+     align-content: center;
+     background-color: rgb(164, 146, 137);
+     color: whitesmoke;
+     font-family: 'Courier New', Courier, monospace;
+     text-align: center;
+}
+
+#flex-child2 h2{
+ padding: 15px;
+ color: rgb(8, 29, 45);
+ align-content: center;
+}
+
+
+}
+
+@media screen and (max-width: 400px){
+
+}
+
