@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Guessing Game</title>
+    <link rel="stylesheet" href="midterm.css">
+</head>
+<body>
+
+    <h1>Type Yes When You See Your Phone Number</h1>
+    <h2>Get comfortable. This could take a while.</h2>
+    <p id="number"></p>
+    <label for="guess">Your phone numer:</label>
+    <input type="text" id="guess" placeholder="Enter 'yes' or 'no'">
+    <button onclick="checkGuess()">Submit</button>
+
+    <script>
+        function generateRandomNumber() {
+            return Math.floor(1000000000 + Math.random() * 9000000000);
+        }
+        console.log(generateRandomNumber);
+
+        function displayRandomNumber() {
+            var randomNumber = generateRandomNumber();
+            document.getElementById("number").innerHTML = "Is this your number? " + randomNumber;
+            return randomNumber;
+        }
+        console.log(displayRandomNumber);
+
+        function checkGuess() {
+            var userGuess = document.getElementById("guess").value.toLowerCase();
+            var randomNumber = displayRandomNumber();
+
+            if (userGuess === 'yes' || userGuess === 'no') {
+                if (userGuess === 'yes') {
+                    document.getElementById("number").innerHTML = "Wow. Finally!";
+                } else {
+                    randomNumber = displayRandomNumber();
+                }
+            } else {
+                document.getElementById("number").innerHTML = "Please enter a valid guess: 'yes' or 'no'.";
+            }
+        }
+        console.log(checkGuess);
+        
+        displayRandomNumber();
+    </script>
+
+</body>
+</html>
+
+

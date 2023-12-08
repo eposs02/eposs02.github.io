@@ -1,0 +1,32 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+h1{
+    font-size: 60px;
+
+}
+h2{
+    font-size: 35px;
+}
+
+#number {
+    font-size: 30px;
+}
+
+label {
+    font-size: 30px;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#guess {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
