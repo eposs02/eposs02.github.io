@@ -27,6 +27,15 @@ button {
     color: black;
 }
 
+#submitButton {
+  transition: transform 0.5s ease-in-out;
+}
+
+#submitButton:hover {
+  transform: translate(var(--randomX), var(--randomY));
+}
+
+
 #guess {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
