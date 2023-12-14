@@ -36,7 +36,6 @@
                     setTimeout(enableButton, 2000); // 2000 milliseconds (2 seconds) delay
                 } else {
                     displayRandomNumber();
-                    setTimeout(hideButton, 1500); // 1500 milliseconds (1.5 seconds) delay
                 }
             } else {
                 document.getElementById("number").innerHTML = "Please enter a valid guess: 'yes' or 'no'.";
@@ -56,16 +55,11 @@
             document.getElementById("submitButton").disabled = false;
         }
 
-        function hideButton() {
-            document.getElementById("submitButton").style.display = 'none';
-        }
-
         displayRandomNumber();
     </script>
 
 </body>
 </html>
-
 
 
 
